@@ -51,3 +51,30 @@ function ChangeColour(ev){
 // console.info("Hello world")
 // alert('Fired from the script'); saving this for later
 //onload="alert('Just a Test')"
+
+let fruits = ["Apple", "Banana", "Cherry"];
+console.dir(fruits);
+
+let imageAr = [
+    'images/view1.jpg',
+    'images/view2.jpg',
+    'images/view3.jpg',
+    'images/view4.jpg',
+    'images/view5.jpg',
+    'images/view6.jpg'
+  ];
+
+
+
+
+
+let imageRotator = document.getElementById("myImages");
+let imageCounter = 0;
+
+function chgImage(){
+    if(imageCounter == 6){imageCounter=0;}
+    imageRotator.setAttribute("src", imageAr[imageCounter]);
+    imageCounter++
+    console.info(imageCounter);
+}
+setInterval(chgImage, 1000);
