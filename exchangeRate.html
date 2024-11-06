@@ -10,7 +10,7 @@
       media="only screen and (min-width:720px)"
       href="css/desktop.css"
     />
-    <script src="js/main.js" defer></script>
+    <script src="js/exchange.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -31,11 +31,14 @@
             <div>
               <form id="myForm">
                 <p>
-                  <label for="pounds">Enter Pounds:</label>
-                  <input type="text" id="pounds" />
+                  <label for="input">Enter Pounds:</label>
+                  <input type="text" id="currency" />
                 </p>
                 <p class="submitBtn">
                   <input type="submit" value="Convert to Euros" />
+                </p>
+                <p class="poundsOrEuros">
+                  <input type="button" value="Convert to Pounds"/>
                 </p>
               </form>
             </div>

@@ -72,9 +72,9 @@ let imageRotator = document.getElementById("myImages");
 let imageCounter = 0;
 
 function chgImage(){
-    if(imageCounter == 6){imageCounter=0;}
+    if(imageCounter == imageAr.length){imageCounter=0;}
     imageRotator.setAttribute("src", imageAr[imageCounter]);
     imageCounter++
     console.info(imageCounter);
 }
-setInterval(chgImage, 1000);
+setInterval(chgImage, 100);
